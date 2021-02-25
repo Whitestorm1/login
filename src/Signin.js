@@ -33,6 +33,7 @@ setsubmit(!submit)
             placeholder="name"
             value={name}
             onChange={(e) => Setname(e.target.value)}
+            required
           />
           <input
             type="password"
@@ -40,6 +41,7 @@ setsubmit(!submit)
             placeholder="password"
             value={password}
             onChange={(e) => Setpassword(e.target.value)}
+            required
           />
           <input
             type="email"
@@ -47,6 +49,7 @@ setsubmit(!submit)
             placeholder="your email"
             value={email}
             onChange={(e) => Setemail(e.target.value)}
+            required
           />
           <button value="submit" onClick={(e) => setsubmit(true)}>
             submit
